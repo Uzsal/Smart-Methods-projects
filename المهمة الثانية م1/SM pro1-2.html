@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<Html lang="en">
+  <Head>
+    <META CHARSET="utf-8">
+	
+    <Title>
+Project1-2 Salwa
+    </Title>
+	
+<style>
+
+.btn {
+  background-color: white;
+  border: line;
+  color: black;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  height : 60px;
+  width : 60px;
+  
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: grey;
+}
+
+.mar { margin: 250 px; 
+}
+</style>
+</head>
+
+
+<body>
+<form method="post" action="C:\xampp\htdocs\direction.php">
+<button class="btn" onclick="forward()" value="forward" id="fw"> أمام </button></br>
+<button class="btn" onclick="left()" value="left" id="lt"> يسار </button>
+<button class="btn" onclick="stop()" value="stop" id="stp"> توقف </button>
+<button class="btn" onclick="right()" value="right" id="rt"> يمين </button></br>
+<button class="btn" onclick="back()" value="back" id="bk"> خلف </button>
+
+</form>
+
+<script>
+function forward(forward) {
+document.getElementById('fw').innerHTML = forward;  
+}
+function left(left) {
+document.getElementById('lt').innerHTML = left;  
+}
+function stop(stop) {
+document.getElementById('stp').innerHTML = stop;  
+}
+function right(right) {
+document.getElementById('rt').innerHTML = right;  
+}
+function back(back) {
+document.getElementById('bk').innerHTML = back;  
+}
+</Script>
+</Body>
+</HTML>
